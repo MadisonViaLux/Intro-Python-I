@@ -26,6 +26,7 @@ print (platform.system() + platform.release(), "Version " + platform.version())
 print(sys.version)
 #https://stackoverflow.com/questions/1093322/how-do-i-check-what-version-of-python-is-running-my-script
 
+
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
