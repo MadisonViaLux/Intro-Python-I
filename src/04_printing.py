@@ -11,7 +11,14 @@ z = "I like turtles!"
 # Using the printf operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
-
+print("%d %1.2f %s" % (x,y,z))
 # Use the 'format' string method to print the same thing
-
+print("{} {} {}".format(x, round(y, 2), z))
 # Finally, print the same thing using an f-string
+print(f"This is a string {x, y, z}")
+
+
+#NOTES______________________________________________________________________
+#age = 255.55555
+#print("I am %1.2f years old" % (age))
+#print(f"Hello my age is {age}")
