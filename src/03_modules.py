@@ -29,13 +29,13 @@ print(sys.version)
 
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
-print(os.name)
+print("OS module", os.name)
 # Print the current process ID
 # YOUR CODE HERE
-#print(os.getuid) <----- Work is here, but this doesn't work on Windows?
+print("process ID ", os.getpid())
 # Print the current working directory (cwd):
 # YOUR CODE HERE
-print("Looky here! " + os.getcwd())
+print("directory ", os.getcwd())
 # Print out your machine's login name
 # YOUR CODE HERE
 #print(os.uname) <----- Work is here, but this doesn't work on Windows?
