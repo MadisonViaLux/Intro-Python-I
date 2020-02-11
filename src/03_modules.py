@@ -10,32 +10,33 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-print (sys.argv)
-for m in sys.argv:
-    print('argument: ', m)
-#https://www.pythonforbeginners.com/argv/more-fun-with-sys-argv
+print('\n***This is the command line***', sys.argv)
+newLine = str(sys.argv).split('/')
+print(newLine)
+for m in newLine:
+    print('\nargument: ', m)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
 import platform
-print (platform.system() + platform.release(), "Version " + platform.version())
+print('\n***OS Platform***', platform.system() + platform.release(), "Version " + platform.version())
 #https://stackoverflow.com/questions/1854/what-os-am-i-running-on
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
-print(sys.version)
+print('\n***version of Python***', sys.version)
 #https://stackoverflow.com/questions/1093322/how-do-i-check-what-version-of-python-is-running-my-script
 
 
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
-print("OS module", os.name)
+print("\n***OS module***", os.name)
 # Print the current process ID
 # YOUR CODE HERE
-print("process ID ", os.getpid())
+print("\n***process ID***", os.getpid())
 # Print the current working directory (cwd):
 # YOUR CODE HERE
-print("directory ", os.getcwd())
+print("\n***directory***", os.getcwd())
 # Print out your machine's login name
 # YOUR CODE HERE
 #print(os.uname) <----- Work is here, but this doesn't work on Windows?
