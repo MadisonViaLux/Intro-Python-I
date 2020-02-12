@@ -39,4 +39,4 @@ print("\n***process ID***", os.getpid())
 print("\n***directory***", os.getcwd())
 # Print out your machine's login name
 # YOUR CODE HERE
-#print(os.uname) <----- Work is here, but this doesn't work on Windows?
+print("\n***machine's login name***", os.getlogin())

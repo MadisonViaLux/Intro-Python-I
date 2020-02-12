@@ -66,3 +66,5 @@ elif len(args) == 3:
     tc.prmonth(year, month)
 else:
     print("Input should be in this format: `14_cal.py month [year]`")
+
+#Terminal/>python3 14_cal.py month [year]
